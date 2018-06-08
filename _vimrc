@@ -66,5 +66,8 @@ set smartindent         " Add an extra level of indentation if the line contains
                         " a left curly brace and remove an indentation level
                         " if the line contains a right curly brace
 
+" ==============================================================================
+" Backup
+" ==============================================================================
 set nobackup            " Don't write a backup file *.~
 set noundofile          " Don't write an undofile *.un~
