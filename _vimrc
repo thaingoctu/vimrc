@@ -41,10 +41,8 @@ endfunction
 if has("gui_running")
     if has("gui_win32")
         set guifont=Consolas:h10:cANSI
-    endif
     elseif has("gui_gtk2")
         set guifont=Inconsolata\ 10 
-    endif
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h10
     endif
