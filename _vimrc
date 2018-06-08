@@ -54,8 +54,13 @@ syntax on               " Turn on syntax coloring
 set number              " Turn on line number
 set cursorline          " Highlight the current line
 set colorcolumn=81      " Show a vertical ruler
-set hlsearch            " Highlight search
 set showcmd             " Show command in the bottom bar
+
+" ==============================================================================
+" Searching
+" ==============================================================================
+set hlsearch            " Highlight search
+set incsearch           " Turn on incremental searches
 
 " ==============================================================================
 " Code Editor
