@@ -58,6 +58,14 @@ set colorcolumn=81      " Show a vertical ruler
 set showcmd             " Show command in the bottom bar
 
 " ==============================================================================
+" Use powershell 
+" ==============================================================================
+if has("win32")
+    set shell=powershell.exe
+    set shellcmdflag=-command
+endif
+
+" ==============================================================================
 " Searching
 " ==============================================================================
 set hlsearch            " Highlight search
