@@ -46,7 +46,9 @@ if has("gui_running")
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h10
     endif
+    set nowrap          " Don't wrap text
     set guioptions-=T   " Don't show the toolbar
+    set guioptions+=bar " Show the horizontal scroll bar
     set columns=100 lines=25
 endif
 
