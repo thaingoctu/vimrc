@@ -80,6 +80,7 @@ set showmatch           " Highlight matching [{()}]
 set tabstop=4           " Set number of visual spaces per TAB
 set softtabstop=4       " Number of spaces in TAB when editing
 set expandtab           " TAB is spaces
+set shiftwidth=4        " Set size of shift width when using command >> or <<
 set cindent             " Indent according to a standard C style
 set autoindent          " New lines are indented the same as previous line
 set smartindent         " Add an extra level of indentation if the line contains
