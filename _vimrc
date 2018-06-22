@@ -58,6 +58,7 @@ set number              " Turn on line number
 set cursorline          " Highlight the current line
 set colorcolumn=81      " Show a vertical ruler
 set showcmd             " Show command in the bottom bar
+set encoding=utf-8      " Set UTF-8 viewing
 
 " ==============================================================================
 " Use powershell 
