@@ -52,10 +52,10 @@ if has("gui_running")
     set columns=100 lines=25
 endif
 
-colorscheme darkblue    " Set the color scheme
+"colorscheme darkblue    " Set the color scheme
 syntax on               " Turn on syntax coloring
 set number              " Turn on line number
-set cursorline          " Highlight the current line
+"set cursorline          " Highlight the current line
 set colorcolumn=81      " Show a vertical ruler
 set showcmd             " Show command in the bottom bar
 set encoding=utf-8      " Set UTF-8 viewing
