@@ -93,3 +93,4 @@ set smartindent         " Add an extra level of indentation if the line contains
 " ==============================================================================
 set nobackup            " Don't write a backup file *.~
 set noundofile          " Don't write an undofile *.un~
+set noswapfile          " Don't create a swap file
