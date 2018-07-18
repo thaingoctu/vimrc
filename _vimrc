@@ -87,6 +87,7 @@ set autoindent          " New lines are indented the same as previous line
 set smartindent         " Add an extra level of indentation if the line contains
                         " a left curly brace and remove an indentation level
                         " if the line contains a right curly brace
+set textwidth=80        " Wrap text automatically
 
 " ==============================================================================
 " Backup
