@@ -42,26 +42,30 @@ if has("gui_running")
     if has("gui_win32")
         set guifont=Consolas:h10:cANSI
     elseif has("gui_gtk2")
-        set guifont=Inconsolata\ 10 
+        set guifont=Inconsolata\ 10
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h10
     endif
     set nowrap          " Don't wrap text
-    set guioptions-=T   " Don't show the toolbar
+    "set guioptions-=T   " Don't show the toolbar
     set guioptions+=bar " Show the horizontal scroll bar
-    set columns=100 lines=25
+    set columns=90 lines=35
 endif
 
 "colorscheme darkblue    " Set the color scheme
 syntax on               " Turn on syntax coloring
 set number              " Turn on line number
-"set cursorline          " Highlight the current line
+set cursorline          " Highlight the current line
 set colorcolumn=81      " Show a vertical ruler
 set showcmd             " Show command in the bottom bar
 set encoding=utf-8      " Set UTF-8 viewing
 
+" Set folding for markdown files
+let g:markdown_folding=1
+set nofoldenable        " Disable auto-folding when openning a file
+
 " ==============================================================================
-" Use powershell 
+" Use powershell
 " ==============================================================================
 if has("win32")
     set shell=powershell.exe
