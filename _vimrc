@@ -68,8 +68,12 @@ set nofoldenable        " Disable auto-folding when openning a file
 " Use powershell
 " ==============================================================================
 if has("win32")
-    set shell=powershell.exe
-    set shellcmdflag=-command
+    set shell=powershell
+    set shellcmdflag=\ -c
+    set shellpipe=|
+    set shellredir=>
+    set shellquote=\"
+    set shellxquote=
 endif
 
 " ==============================================================================
