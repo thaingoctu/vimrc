@@ -49,7 +49,7 @@ if has("gui_running")
     set nowrap          " Don't wrap text
     "set guioptions-=T   " Don't show the toolbar
     set guioptions+=bar " Show the horizontal scroll bar
-    set columns=90 lines=35
+    set columns=90 lines=45
 endif
 
 "colorscheme darkblue    " Set the color scheme
@@ -96,6 +96,10 @@ set smartindent         " Add an extra level of indentation if the line contains
                         " a left curly brace and remove an indentation level
                         " if the line contains a right curly brace
 set textwidth=80        " Wrap text automatically
+
+"Syntax highlighting in Markdown
+au BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages=['bash=sh', 'c=cpp', 'python']
 
 " ==============================================================================
 " Backup
