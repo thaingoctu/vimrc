@@ -1,6 +1,11 @@
 source $VIMRUNTIME/vimrc_example.vim
 
-set diffexpr=MyDiff()
+if has("gui_win32")
+    set diffexpr=
+else
+    set diffexpr=MyDiff()
+endif
+
 function MyDiff()
   let opt = '-a --binary '
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
@@ -52,7 +57,6 @@ if has("gui_running")
     set columns=90 lines=45
 endif
 
-"colorscheme darkblue    " Set the color scheme
 syntax on               " Turn on syntax coloring
 set number              " Turn on line number
 set cursorline          " Highlight the current line
@@ -97,9 +101,9 @@ set smartindent         " Add an extra level of indentation if the line contains
                         " if the line contains a right curly brace
 set textwidth=80        " Wrap text automatically
 
-"Syntax highlighting in Markdown
+" Syntax highlighting in Markdown
 au BufNewFile,BufReadPost *.md set filetype=markdown
-let g:markdown_fenced_languages=['bash=sh', 'c=cpp', 'python']
+let g:markdown_fenced_languages=['bash=sh', 'c=cpp', 'cpp', 'python']
 
 " ==============================================================================
 " Backup
